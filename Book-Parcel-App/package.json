@@ -1,0 +1,16 @@
+{
+  "name": "book-paral-app",
+  "version": "1.0.0",
+  "description": "My book app using parcel",
+  "scripts": {
+    "start": "parcel Index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vivek",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Html Dom Demo</title>
-    </head>
-    <body>
-        <button onclick="addpara()">Add Paragraph</button>
-        <div id="para1"></div>
-        <p>This is old paragraph</p>
-        <div class="para2"></div>
-        <script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Demo</title>
+</head>
+<body>
+    <button onclick="addpara()">Add Paragraph</button>         <!-- everytime you click on it a new para is formed -->
+    <div id="para1"></div>
+    <p>This is old paragraph</p>
+      <div id="para2"></div>
+    <script>
         function addpara(){
-         const id=document.querySelectorAll("div")
+    
+        const id=document.querySelectorAll("div");
         id.forEach((id1)=>{
             const para=document.createElement("p");
         para.textContent="This is new Paragraph";
-        para.style.background="blue";
         para.style.color="white";
-         id1.appendChild(para);
-        })
-        
-        }
+        para.style.background="blue";
+             id1.appendChild(para);
+         })                                                //because querySelectorAll returns an array
+    
+        }                                                  //this simaltaneously creates a new paragraph above and below the old paragraph
     </script>
-    </body>
+</body>
 </html>
